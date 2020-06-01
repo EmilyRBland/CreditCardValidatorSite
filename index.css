@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    
+}
+
+label {
+    font-size: 1rem;
+}
+
+#validator {
+    width: 20%;
+}
