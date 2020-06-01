@@ -30,8 +30,10 @@ function validateCreditCard(creditCardNumber) {
       const toValidate = document.getElementById("validator").value;
       const result = validateCreditCard(toValidate);
       if(result === true) {
+          document.getElementById("output").style.display = "block";
          return document.getElementById("output").innerHTML = "Valid";
       } else {
+         document.getElementById("output").style.display = "block";
          return document.getElementById("output").innerHTML = "Invalid";
       }
   } 
@@ -39,4 +41,5 @@ function validateCreditCard(creditCardNumber) {
   function refresh() {
     document.getElementById("validator").value = ""
     document.getElementById("output").innerHTML = ""
+    document.getElementById("output").style.display = "none";
   }

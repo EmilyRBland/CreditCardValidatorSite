@@ -14,12 +14,14 @@
             Credit Card Validator
         </header>
         <main>
+            <div id="val-container">
                 <label for="validator">Please enter your card number:</label>
                 <br>
                 <br><input type="text" id="validator" name="validator" placeholder="Credit Card Number">
-                <input type="button" value="check" onclick="validate()">
-                <input type="button" value="refresh" onclick="refresh()">
+                <input class="Button" type="button" value="check" onclick="validate()">
+                <input class="Button" type="button" value="refresh" onclick="refresh()">
                 <p id="output"></p>
+            </div>
         </main>
     </body>
 </html>
