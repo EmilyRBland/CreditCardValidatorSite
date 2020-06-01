@@ -6,7 +6,7 @@ function validateCreditCard(creditCardNumber) {
     };
     cardNumber.reverse();
     for (let i = 1; i < cardNumber.length; i +=2) {
-     let doubledNumber = 0;
+        let doubledNumber = 0;
         doubledNumber = cardNumber[i] * 2;
         if (doubledNumber > 9) {
          doubledNumber -= 9;
@@ -26,19 +26,19 @@ function validateCreditCard(creditCardNumber) {
 }
 
 
-  function validate() {
-      const toValidate = document.getElementById("validator").value;
-      const result = validateCreditCard(toValidate);
-      if(result === true) {
-          document.getElementById("output").style.display = "block";
+function validate() {
+    const toValidate = document.getElementById("validator").value;
+    const result = validateCreditCard(toValidate);
+        if(result === true) {
+         document.getElementById("output").style.display = "block";
          return document.getElementById("output").innerHTML = "Valid";
-      } else {
+        } else {
          document.getElementById("output").style.display = "block";
          return document.getElementById("output").innerHTML = "Invalid";
-      }
-  } 
+        }
+} 
 
-  function refresh() {
+function refresh() {
     document.getElementById("validator").value = ""
     document.getElementById("output").innerHTML = ""
     document.getElementById("output").style.display = "none";
